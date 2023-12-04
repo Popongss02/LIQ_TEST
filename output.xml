@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20231121 08:38:39.707" rpa="false" schemaversion="4">
+<suite id="s1" name="LIQ" source="C:\Users\User\PycharmProjects\LIQ_Auto_FLAUI\Test Suite\LIQ.robot">
+<test id="s1-t1" name="TC012" line="9">
+<kw name="Launch LIQ" library="LIQLoginWindow">
+<arg>${loaniq_path}</arg>
+<doc>This keyword is use to open the LIQ app.
+@author:    econdino    03NOV2023    - initial create</doc>
+<kw name="LIQ Launched Application" library="GenericKeywords">
+<arg>${value}</arg>
+<doc>This keyword is use to launh liq.
+@author:    econdino    26OCT2023    - initial create</doc>
+<kw name="Launch Application" library="FlaUILibrary">
+<arg>${value}</arg>
+<doc>Launches an application.</doc>
+<status status="PASS" starttime="20231121 08:38:40.272" endtime="20231121 08:38:40.353"/>
+</kw>
+<status status="PASS" starttime="20231121 08:38:40.272" endtime="20231121 08:38:40.353"/>
+</kw>
+<status status="PASS" starttime="20231121 08:38:40.256" endtime="20231121 08:38:40.353"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>15s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231121 08:38:55.354" level="INFO">Slept 15 seconds</msg>
+<status status="PASS" starttime="20231121 08:38:40.353" endtime="20231121 08:38:55.354"/>
+</kw>
+<kw name="LIQ Active Widow" library="LIQLoginWindow">
+<arg>${Loaniq_Login_Window}</arg>
+<doc>This keyword is use to validate if loanIq windwow tab is activated.
+@author:    econdino    03NOV2023    - initial create</doc>
+<kw name="LIQ Wait Until Window Activated" library="GenericKeywords">
+<arg>${locator}</arg>
+<doc>This keyword is use to validate Active window in liq.
+@author:    econdino    26OCT2023    - initial create</doc>
+<kw name="Wait Until Element Is Visible" library="FlaUILibrary">
+<arg>${locator}</arg>
+<doc>Waits until element is visible or timeout was reached. If timeout was reached an FlaUIError occurred.</doc>
+<status status="PASS" starttime="20231121 08:38:55.354" endtime="20231121 08:38:55.429"/>
+</kw>
+<status status="PASS" starttime="20231121 08:38:55.354" endtime="20231121 08:38:55.429"/>
+</kw>
+<status status="PASS" starttime="20231121 08:38:55.354" endtime="20231121 08:38:55.429"/>
+</kw>
+<kw name="LIQ Input UserName" library="LIQLoginWindow">
+<arg>${Username_Textfield}</arg>
+<arg>${Username}</arg>
+<doc>This keyword is use to input UserName in Username TextField.
+@author:    econdino    07NOV2023    - initial create</doc>
+<kw name="LIQ Input Text" library="GenericKeywords">
+<arg>${UserName}</arg>
+<arg>${value}</arg>
+<doc>This keyword is use to input text in liq.
+@author:    econdino    26OCT2023    - initial create</doc>
+<kw name="Return From Keyword If" library="BuiltIn">
+<arg>'${value}'=='None' or '${value}'=='${EMPTY}'</arg>
+<doc>Returns from the enclosing user keyword if ``condition`` is true.</doc>
+<status status="PASS" starttime="20231121 08:38:55.429" endtime="20231121 08:38:55.429"/>
+</kw>
+<kw name="Set Text To Textbox" library="FlaUILibrary">
+<arg>${locator}</arg>
+<arg>${value}</arg>
+<doc>Inputs value to a textbox module.</doc>
+<status status="PASS" starttime="20231121 08:38:55.429" endtime="20231121 08:38:55.643"/>
+</kw>
+<status status="PASS" starttime="20231121 08:38:55.429" endtime="20231121 08:38:55.647"/>
+</kw>
+<status status="PASS" starttime="20231121 08:38:55.429" endtime="20231121 08:38:55.647"/>
+</kw>
+<kw name="LIQ Input Password" library="LIQLoginWindow">
+<arg>${Password_Textfield}</arg>
+<arg>${password}</arg>
+<doc>This keyword is use to input Password in Password Textfield.
+@author:    econdino    07NOV2023    - initial create</doc>
+<kw name="LIQ Input Text" library="GenericKeywords">
+<arg>${Password}</arg>
+<arg>${value}</arg>
+<doc>This keyword is use to input text in liq.
+@author:    econdino    26OCT2023    - initial create</doc>
+<kw name="Return From Keyword If" library="BuiltIn">
+<arg>'${value}'=='None' or '${value}'=='${EMPTY}'</arg>
+<doc>Returns from the enclosing user keyword if ``condition`` is true.</doc>
+<status status="PASS" starttime="20231121 08:38:55.648" endtime="20231121 08:38:55.649"/>
+</kw>
+<kw name="Set Text To Textbox" library="FlaUILibrary">
+<arg>${locator}</arg>
+<arg>${value}</arg>
+<doc>Inputs value to a textbox module.</doc>
+<status status="PASS" starttime="20231121 08:38:55.649" endtime="20231121 08:38:55.779"/>
+</kw>
+<status status="PASS" starttime="20231121 08:38:55.648" endtime="20231121 08:38:55.779"/>
+</kw>
+<status status="PASS" starttime="20231121 08:38:55.648" endtime="20231121 08:38:55.780"/>
+</kw>
+<status status="PASS" starttime="20231121 08:38:40.256" endtime="20231121 08:38:55.782"/>
+</test>
+<status status="PASS" starttime="20231121 08:38:39.708" endtime="20231121 08:38:55.784"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="LIQ">LIQ</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
